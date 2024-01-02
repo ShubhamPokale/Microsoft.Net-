@@ -1,0 +1,7 @@
+C:\Shubham Pokale\Tech Prowess\Dotnet_Assignment\Assignment\Assignment\bin\Debug\Assignment.exe.config
+C:\Shubham Pokale\Tech Prowess\Dotnet_Assignment\Assignment\Assignment\bin\Debug\Assignment.exe
+C:\Shubham Pokale\Tech Prowess\Dotnet_Assignment\Assignment\Assignment\bin\Debug\Assignment.pdb
+C:\Shubham Pokale\Tech Prowess\Dotnet_Assignment\Assignment\Assignment\obj\Debug\Assignment.csproj.AssemblyReference.cache
+C:\Shubham Pokale\Tech Prowess\Dotnet_Assignment\Assignment\Assignment\obj\Debug\Assignment.csproj.CoreCompileInputs.cache
+C:\Shubham Pokale\Tech Prowess\Dotnet_Assignment\Assignment\Assignment\obj\Debug\Assignment.exe
+C:\Shubham Pokale\Tech Prowess\Dotnet_Assignment\Assignment\Assignment\obj\Debug\Assignment.pdb
