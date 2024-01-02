@@ -1,0 +1,295 @@
+.NET Framework		Year				Visual Studio
+
+1.0			2001				2001
+1.x			2003				2003
+2.0			2005				2005
+3.0			2006				----
+3.5			2008				2008
+4.0			2010				2010
+4.5			2012				2012
+4.5.1			2013				2013
+...
+
+--------------------------LTS
+4.7							2019
+4.8 [ASP.NET MVC 5 - Web applications and Web APIs, ../]2022
+
+.NET Core
+1.0			2015				2015
+1.0, 3.x, 5.0, 6.0, 7.0, 8.0
+
+C# Language - C# 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0
+
+What is Solution in .NET?
+It is a collection of projects
+
+
+Introduction to Object Oriented Programming - 
+
+4-Major Pillars - 
+	1) Abstraction - 
+	2) Encapsulation
+		Class as a container/template [Properties, Methods and Events]
+			[Private, Protected, Public, Internal, Protected Internal]
+		Types of classes- 
+			Abstract, Concret, Inner, Sealed [Final], Static, Partial, Anonymous
+	3) Inheritance - Reusability
+			Generalization-To-Specialization
+			Relationship - [IS-A] [HAS-A]
+			Types - 
+				Single, Multilevel, Multiple [Not Supported], Heirachy, Hybrid
+	4) Polymorphism
+		Compiletime, Static, Early Binding, Overloading
+		Runtime, Dynamic, Late Binding, Overriding
+
+abstract class Person{
+	public Person(int sid){
+		SocialId=sid;
+	}
+	SocialId;
+}
+
+class Customer : Person{
+	public Customer(){
+
+	}
+	private int A; [Only within the class]
+	protected int B; [As an inherited member]
+	public int C; [As an instance member or as an inherited member]
+	double COGS;
+	
+}
+
+new Customer();
+
+interface IBiology{
+	biologyCalci();
+}
+interface IChemistry{
+	chemistryCalci();
+}
+interface IPhysics{
+	physicsCalci();
+}
+interface IScience:IBiology, IPhysics, IChemistry{
+	
+}
+
+Customer obj=new Customer();
+obj.C
+
+class Science : IScience{
+	physicsCalci();
+	chemistryCalci();
+	biologyCalci();
+}
+
+IBiology bioHod=new Science();
+IChemistry chemHod=new Science();
+IPhysics phyHod=new Science();
+IScience director=new Science();
+
+S.O.L.I.D. Principles
+
+S - Single Responsibility Principle
+O - Open Close Principle
+L - Liskvo Substitution Principle
+I - Interface Segregation Principle
+D - Dependency Inversion Principle
+
+Example of Inheritance - 
+
+class Object{
+
+}
+
+class A:Object{
+	private x;
+	protected y;
+	public z;
+}
+
+//class B:Ione, ITwo, IThree, A{
+
+
+//IS-A
+class B:A{
+	public E;
+}
+
+Inherited Members [Public and Protected]
+class C:B{
+	public D;
+}
+
+Instance Members
+
+C obj=new C();
+obj.public members
+
+class BasicMath{
+	int addition(int i, int j)
+	int addition(int i, int j, int k)
+	int addition(double i, int j)
+}
+class AdvanceMath : BasicMath{
+	int addition(double i, double j)
+}
+
+
+//Runtime Polymorphism
+
+class Math{
+	public virtual int addition(int i, int j){
+		return i + j;
+	}
+}
+
+
+class AdvanceMath : Math{
+	public override int addition(int i, int j){
+		return i + j + 1000;
+	}	
+}
+
+Math obj=new Math();
+obj.addition(1000,2000); //3000
+
+AdvanceMath obj=new AdvanceMath();
+obj.addition(1000,2000); //4000
+
+Math obj=new AdvanceMath();
+obj.addition(1000,2000); //4000
+
+
+//Shadowing
+
+class Math{
+	public int addition(int i, int j){
+		return i + j;
+	}
+}
+
+
+class AdvanceMath : Math{
+	public new int addition(int i, int j){
+		return i + j + 1000;
+	}	
+}
+
+Math obj=new Math();
+obj.addition(1000,2000); //3000
+
+AdvanceMath obj=new AdvanceMath();
+obj.addition(1000,2000); //4000
+
+Math obj=new AdvanceMath();
+obj.addition(1000,2000); //3000
+
+Example - InterviewApp
+
+Function parameters - 
+	input - Default
+	out
+	ref
+	params
+	
+Purchase Order System
+	Category, Product, Supplier, Shipper, Order, OrderDetail, Customer, Employee, Invoice
+Namespace [In Java it is Package]- 
+
+Constructors - Initialization
+1) Default
+2) Parmeterized
+3) Copy
+4) Static
+
+class Customer{
+	static int i=0;
+	public Customer(){
+		++i;
+	}
+}
+
+new Customer();
+new Customer();
+new Customer();
+
+Data Storage - 
+
+In-Memory - 
+	Array
+	Collections
+		1) Non-Generic Collections [Boxing and Unboxing]
+			[import a namespace - System.Collections]
+			ArrayList, Stack, Queue, Hashtable
+		Boxing - Convert Value Type into Reference Type
+		Unboxing - Convert Reference Type into Value Type
+
+		2) Generics Collections [C# 2.0]
+			[import - System.Collections.Generic]
+			List<T>, Stack<T>, Queue<T>, Dictionary<TKey,TValue>
+
+File System [System.IO]
+	File [Offers number of static methods]
+	DriveInfo [Information of drives]
+	DirectoryInfo
+	FileInfo
+	StreamWriter
+	StreamReader
+	FileStream
+	...
+
+Database - ADO.NET 
+	Connection String - 
+		Data Source/Server = It is a name of your Database Server [It is an IP address/machine name along with PORT number in MySQL Server]
+	PORT
+	Database Name
+	User Id
+	Password
+
+	"Data Source=192.168.100.80;Port=3306;Database=PODb;User Id=saleel;Password=saleel"
+		
+Download the provider of MySQL Server in order to connect and perform the CRUD operations in MySQL Server database
+	It's a DDL [API/Library]
+		MySql.Data.dll
+ADO.NET Architecture - 
+	1) Disconnected Architecture
+		MySqlConnection [MySql.Data.MySqlClient]
+		MySqlDataAdapter - It takes connection object and queries. Go to the database server [MySql.Data.MySqlClient]
+		DataSet [Internally it has Xml structure] [System.Data;]
+			It is a collection of data tables
+			Each table can be accessed  using either an index number or the table name
+			Each Data table is a collection of Data Row and Data Column
+	2) Connected Architecture
+
+
+
+Examples - 
+	ArrayList numbers=new ArrayList(5);
+	numbers.Add(100); //Object //Boxing
+	numbers.Add("Two Hundred"); //Object
+	int firstNo=Convert.ToInt32(numbers[0]);//Return an object //Error
+		//Unboxing
+
+Boxing and Unboxing
+
+
+Generic Collections - Does not do boxing and Unboxing
+List<int> numbers=new List<int>();
+numbers.Add(100);
+numbers.Add("Two Hundred"); //It will throw you an error Reason - Type Missmatch
+int firstNo=numbers[0];
+
+
+
+
+
+
+
+
+
+
+
+
+

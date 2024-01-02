@@ -1,0 +1,8 @@
+C:\DotNet-Dec-2023\Day-3\DifferentTypesOfClasses\DifferentTypesOfClasses\bin\Debug\DifferentTypesOfClasses.exe.config
+C:\DotNet-Dec-2023\Day-3\DifferentTypesOfClasses\DifferentTypesOfClasses\bin\Debug\DifferentTypesOfClasses.exe
+C:\DotNet-Dec-2023\Day-3\DifferentTypesOfClasses\DifferentTypesOfClasses\bin\Debug\DifferentTypesOfClasses.pdb
+C:\DotNet-Dec-2023\Day-3\DifferentTypesOfClasses\DifferentTypesOfClasses\obj\Debug\DifferentTypesOfClasses.csproj.AssemblyReference.cache
+C:\DotNet-Dec-2023\Day-3\DifferentTypesOfClasses\DifferentTypesOfClasses\obj\Debug\DifferentTypesOfClasses.csproj.SuggestedBindingRedirects.cache
+C:\DotNet-Dec-2023\Day-3\DifferentTypesOfClasses\DifferentTypesOfClasses\obj\Debug\DifferentTypesOfClasses.csproj.CoreCompileInputs.cache
+C:\DotNet-Dec-2023\Day-3\DifferentTypesOfClasses\DifferentTypesOfClasses\obj\Debug\DifferentTypesOfClasses.exe
+C:\DotNet-Dec-2023\Day-3\DifferentTypesOfClasses\DifferentTypesOfClasses\obj\Debug\DifferentTypesOfClasses.pdb

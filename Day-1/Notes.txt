@@ -1,0 +1,41 @@
+.NET Framework		Year				Visual Studio
+
+1.0			2001				2001
+1.x			2003				2003
+2.0			2005				2005
+3.0			2006				----
+3.5			2008				2008
+4.0			2010				2010
+4.5			2012				2012
+4.5.1			2013				2013
+...
+
+--------------------------LTS
+4.7							2019
+4.8 [ASP.NET MVC 5 - Web applications and Web APIs, ../]2022
+
+.NET Core
+1.0			2015				2015
+1.0, 3.x, 5.0, 6.0, 7.0, 8.0
+
+C# Language - C# 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0
+
+What is Solution in .NET?
+It is a collection of projects
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
